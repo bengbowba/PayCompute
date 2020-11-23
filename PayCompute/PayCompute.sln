@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayCompute", "PayCompute.csproj", "{663EC0D4-AC2A-432A-9A28-9E25D82FE15D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayCompute.Entity", "..\PayCompute.Entity\PayCompute.Entity.csproj", "{03FD99BE-3DCE-4045-A351-7573AC6F44A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{663EC0D4-AC2A-432A-9A28-9E25D82FE15D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{663EC0D4-AC2A-432A-9A28-9E25D82FE15D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{663EC0D4-AC2A-432A-9A28-9E25D82FE15D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{663EC0D4-AC2A-432A-9A28-9E25D82FE15D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03FD99BE-3DCE-4045-A351-7573AC6F44A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03FD99BE-3DCE-4045-A351-7573AC6F44A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03FD99BE-3DCE-4045-A351-7573AC6F44A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03FD99BE-3DCE-4045-A351-7573AC6F44A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8BDB3E83-54A7-4494-BEEC-ADFB24AD0AD3}
+	EndGlobalSection
+EndGlobal
