@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PayCompute.Entity
 {
-    class PaymentRecord
+    public class PaymentRecord
     {
         public int Id { get; set; }
         [ForeignKey("Employee")]
