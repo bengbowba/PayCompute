@@ -207,6 +207,29 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "PayCompute.Entity/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "compile": {
+          "bin/placeholder/PayCompute.Entity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PayCompute.Entity.dll": {}
+        }
+      },
+      "PayCompute.Persistence/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "PayCompute.Entity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PayCompute.Persistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PayCompute.Persistence.dll": {}
+        }
       }
     }
   },
@@ -678,11 +701,23 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "PayCompute.Entity/1.0.0": {
+      "type": "project",
+      "path": "../PayCompute.Entity/PayCompute.Entity.csproj",
+      "msbuildProject": "../PayCompute.Entity/PayCompute.Entity.csproj"
+    },
+    "PayCompute.Persistence/1.0.0": {
+      "type": "project",
+      "path": "../PayCompute.Persistence/PayCompute.Persistence.csproj",
+      "msbuildProject": "../PayCompute.Persistence/PayCompute.Persistence.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
-      "Microsoft.NETCore.App >= 2.2.0"
+      "Microsoft.NETCore.App >= 2.2.0",
+      "PayCompute.Entity >= 1.0.0",
+      "PayCompute.Persistence >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -692,11 +727,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\BengFuture2\\PayCompute_Project\\PayCompute.Entity\\PayCompute.Entity.csproj",
-      "projectName": "PayCompute.Entity",
-      "projectPath": "F:\\BengFuture2\\PayCompute_Project\\PayCompute.Entity\\PayCompute.Entity.csproj",
+      "projectUniqueName": "F:\\BengFuture2\\PayCompute_Project\\PayCompute.Services\\PayCompute.Services.csproj",
+      "projectName": "PayCompute.Services",
+      "projectPath": "F:\\BengFuture2\\PayCompute_Project\\PayCompute.Services\\PayCompute.Services.csproj",
       "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-      "outputPath": "F:\\BengFuture2\\PayCompute_Project\\PayCompute.Entity\\obj\\",
+      "outputPath": "F:\\BengFuture2\\PayCompute_Project\\PayCompute.Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -715,7 +750,14 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {}
+          "projectReferences": {
+            "F:\\BengFuture2\\PayCompute_Project\\PayCompute.Entity\\PayCompute.Entity.csproj": {
+              "projectPath": "F:\\BengFuture2\\PayCompute_Project\\PayCompute.Entity\\PayCompute.Entity.csproj"
+            },
+            "F:\\BengFuture2\\PayCompute_Project\\PayCompute.Persistence\\PayCompute.Persistence.csproj": {
+              "projectPath": "F:\\BengFuture2\\PayCompute_Project\\PayCompute.Persistence\\PayCompute.Persistence.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -4438,6 +4438,43 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "PayCompute.Entity/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "compile": {
+          "bin/placeholder/PayCompute.Entity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PayCompute.Entity.dll": {}
+        }
+      },
+      "PayCompute.Persistence/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "PayCompute.Entity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PayCompute.Persistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PayCompute.Persistence.dll": {}
+        }
+      },
+      "PayCompute.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "PayCompute.Entity": "1.0.0",
+          "PayCompute.Persistence": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PayCompute.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PayCompute.Services.dll": {}
+        }
       }
     }
   },
@@ -12070,13 +12107,30 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "PayCompute.Entity/1.0.0": {
+      "type": "project",
+      "path": "../PayCompute.Entity/PayCompute.Entity.csproj",
+      "msbuildProject": "../PayCompute.Entity/PayCompute.Entity.csproj"
+    },
+    "PayCompute.Persistence/1.0.0": {
+      "type": "project",
+      "path": "../PayCompute.Persistence/PayCompute.Persistence.csproj",
+      "msbuildProject": "../PayCompute.Persistence/PayCompute.Persistence.csproj"
+    },
+    "PayCompute.Services/1.0.0": {
+      "type": "project",
+      "path": "../PayCompute.Services/PayCompute.Services.csproj",
+      "msbuildProject": "../PayCompute.Services/PayCompute.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
-      "Microsoft.NETCore.App >= 2.2.0"
+      "Microsoft.NETCore.App >= 2.2.0",
+      "PayCompute.Entity >= 1.0.0",
+      "PayCompute.Services >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -12109,7 +12163,14 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {}
+          "projectReferences": {
+            "F:\\BengFuture2\\PayCompute_Project\\PayCompute.Entity\\PayCompute.Entity.csproj": {
+              "projectPath": "F:\\BengFuture2\\PayCompute_Project\\PayCompute.Entity\\PayCompute.Entity.csproj"
+            },
+            "F:\\BengFuture2\\PayCompute_Project\\PayCompute.Services\\PayCompute.Services.csproj": {
+              "projectPath": "F:\\BengFuture2\\PayCompute_Project\\PayCompute.Services\\PayCompute.Services.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -207,6 +207,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "PayCompute.Entity/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "compile": {
+          "bin/placeholder/PayCompute.Entity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PayCompute.Entity.dll": {}
+        }
       }
     }
   },
@@ -678,11 +688,17 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "PayCompute.Entity/1.0.0": {
+      "type": "project",
+      "path": "../PayCompute.Entity/PayCompute.Entity.csproj",
+      "msbuildProject": "../PayCompute.Entity/PayCompute.Entity.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
-      "Microsoft.NETCore.App >= 2.2.0"
+      "Microsoft.NETCore.App >= 2.2.0",
+      "PayCompute.Entity >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -692,11 +708,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\BengFuture2\\PayCompute_Project\\PayCompute.Entity\\PayCompute.Entity.csproj",
-      "projectName": "PayCompute.Entity",
-      "projectPath": "F:\\BengFuture2\\PayCompute_Project\\PayCompute.Entity\\PayCompute.Entity.csproj",
+      "projectUniqueName": "F:\\BengFuture2\\PayCompute_Project\\PayCompute.Persistence\\PayCompute.Persistence.csproj",
+      "projectName": "PayCompute.Persistence",
+      "projectPath": "F:\\BengFuture2\\PayCompute_Project\\PayCompute.Persistence\\PayCompute.Persistence.csproj",
       "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-      "outputPath": "F:\\BengFuture2\\PayCompute_Project\\PayCompute.Entity\\obj\\",
+      "outputPath": "F:\\BengFuture2\\PayCompute_Project\\PayCompute.Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -715,7 +731,11 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {}
+          "projectReferences": {
+            "F:\\BengFuture2\\PayCompute_Project\\PayCompute.Entity\\PayCompute.Entity.csproj": {
+              "projectPath": "F:\\BengFuture2\\PayCompute_Project\\PayCompute.Entity\\PayCompute.Entity.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

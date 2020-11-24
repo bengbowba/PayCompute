@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LP0Mo4av1d4CnOkc+akulQtZFwQ9hdQ+9VvVLw4BEUx8/N5R/cj1C+kRQbGHGOlGHP1iUl82wVtzdHMYDhOolA==",
+  "dgSpecHash": "YtbzAbLDINS9luFzdmivbI8m4MM3olWMD8Nxp4jRs35ntpA2Q0iqcOt4G9INgXDa9B2bKG0UOLFvxBqvIC/CgA==",
   "success": true,
-  "projectFilePath": "F:\\BengFuture2\\PayCompute_Project\\PayCompute.Entity\\PayCompute.Entity.csproj",
+  "projectFilePath": "F:\\BengFuture2\\PayCompute_Project\\PayCompute.Services\\PayCompute.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.app\\2.2.0\\microsoft.netcore.app.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.dotnetapphost\\2.2.0\\microsoft.netcore.dotnetapphost.2.2.0.nupkg.sha512",
